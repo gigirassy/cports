@@ -1,5 +1,5 @@
 pkgname = "firewalld"
-pkgver = "2.3.1"
+pkgver = "2.3.2"
 pkgrel = 0
 build_style = "gnu_configure"
 configure_args = ["--disable-systemd"]
@@ -30,7 +30,7 @@ pkgdesc = "Stateful zone-based firewall daemon with D-Bus interface"
 license = "GPL-2.0-or-later"
 url = "https://firewalld.org"
 source = f"https://github.com/firewalld/firewalld/releases/download/v{pkgver}/firewalld-{pkgver}.tar.bz2"
-sha256 = "719890d82caa7d162b021ed646034883b9eb354a45de3685c28ead057d139d4d"
+sha256 = "32890e2cf4638bc4aeb5d63a2a53ac675f2fc9c2e2f704c77710d72bfaefe498"
 # tests don't work in our build env
 options = ["!check"]
 

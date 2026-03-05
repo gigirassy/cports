@@ -260,6 +260,8 @@ def install(self):
     )
     self.install_file("^/distribution.ini", "usr/lib/firefox/distribution")
     self.install_file("^/firefox.desktop", "usr/share/applications")
+    self.install_file("^/firefox.desktop", "usr/share/applications")
+    self.install_file("^/policies.json", "etc/firefox/policies")
 
     # icons
     for sz in [16, 22, 24, 32, 48, 128, 256]:

@@ -1,6 +1,6 @@
 pkgname = "elogind"
-pkgver = "255.17"
-pkgrel = 1
+pkgver = "255.22"
+pkgrel = 0
 build_style = "meson"
 configure_args = [
     "--libexecdir=/usr/lib/elogind",
@@ -40,8 +40,8 @@ install_if = [self.with_pkgver("elogind-meta")]
 pkgdesc = "Standalone version of logind"
 license = "GPL-2.0-or-later AND LGPL-2.0-or-later"
 url = "https://github.com/elogind/elogind"
-source = f"{url}/archive/v{pkgver}.tar.gz"
-sha256 = "a9725ae3f73f8d910de84c108bc11bfd4c782bef6a4190b2ec70c5d2f22344db"
+source = f"{url}/archive/V{pkgver}.tar.gz"
+sha256 = "79b5eb96bccf3a6101b35e62d0f80b2d0a47077a1507a6edc705f8cb7bdb0619"
 # crashes in find_suitable_hibernation_device_full -> btrfs_get_file_physical_offset_fd
 # when logging into plasma from gdm
 tool_flags = {"CFLAGS": ["-U_FORTIFY_SOURCE"]}
