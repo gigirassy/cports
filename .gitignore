@@ -8,10 +8,6 @@ packages*
 pkgstage*
 etc/keys
 etc/config.ini
-void-*.tar.xz
-bootstrap.*
-!bootstrap.sh
-!bootstrap.ini
 
 # custom configs
 .gram/
